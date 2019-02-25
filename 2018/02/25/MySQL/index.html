@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | DRH</title>
+  <title>MySQL 基础 | DRH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="DRH">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="– SQL语法– DDL(数据定义语言)– DML(数据操作语言）– DCL(数据控制语言)– 注意: SQL中大小写不敏感（大写和小写是一样的）; 每条SQL语句必须以分号结束 – 一.DDL - 主要提供数据库和表的创建、删除和修改– 0. 删除数据库: drop database 数据库名;DROP DATABASE school;   – 直接删除指定数据库DROP DATABASE if">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL 基础">
+<meta property="og:url" content="http://yoursite.com/2018/02/25/MySQL/index.html">
 <meta property="og:site_name" content="DRH">
+<meta property="og:description" content="– SQL语法– DDL(数据定义语言)– DML(数据操作语言）– DCL(数据控制语言)– 注意: SQL中大小写不敏感（大写和小写是一样的）; 每条SQL语句必须以分号结束 – 一.DDL - 主要提供数据库和表的创建、删除和修改– 0. 删除数据库: drop database 数据库名;DROP DATABASE school;   – 直接删除指定数据库DROP DATABASE if">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-25T10:02:18.053Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DRH">
+<meta name="twitter:title" content="MySQL 基础">
+<meta name="twitter:description" content="– SQL语法– DDL(数据定义语言)– DML(数据操作语言）– DCL(数据控制语言)– 注意: SQL中大小写不敏感（大写和小写是一样的）; 每条SQL语句必须以分号结束 – 一.DDL - 主要提供数据库和表的创建、删除和修改– 0. 删除数据库: drop database 数据库名;DROP DATABASE school;   – 直接删除指定数据库DROP DATABASE if">
   
     <link rel="alternative" href="/atom.xml" title="DRH" type="application/atom+xml">
   
@@ -150,150 +154,193 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="categories-MySQL" class="article article-type-categories " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/23/Hexo博客搭建/" class="archive-article-date">
-  	<time datetime="2019-02-23T02:41:49.681Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-23</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/23/Hexo博客搭建/">hexo 博客搭建</a>
+    <h1 class="article-title" itemprop="name">
+      MySQL 基础
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">标签</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/vim编辑器之神/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.436Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
+        
+        <a href="/2018/02/25/MySQL/" class="archive-article-date">
+  	<time datetime="2018-02-25T09:25:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-25</time>
 </a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>– SQL语法<br>– DDL(数据定义语言)<br>– DML(数据操作语言）<br>– DCL(数据控制语言)<br>– 注意: SQL中大小写不敏感（大写和小写是一样的）; 每条SQL语句必须以分号结束</p>
+<p>– 一.DDL - 主要提供数据库和表的创建、删除和修改<br>– 0. 删除数据库: drop database 数据库名;<br>DROP DATABASE school;   – 直接删除指定数据库<br>DROP DATABASE if EXISTS school;   – 如果指定的数据库存在就删除数据库</p>
+<p>– 1.创建数据库: create database 数据库名;<br>create database school;  – 直接创建指定数据库<br>CREATE database if not EXISTS school;  – 当指定数据库不存在的时候才创建数据库<br>create database if not EXISTS school default charset utf8;   – 创建数据库的时候设置字符集编码方式为utf8,让数据库支持中文数据的存储</p>
+<p>– 2.使用/切换数据库: use 数据库名;<br>use school;</p>
+<p>– 3.新建表: create table if not exists 表名(字段名1 类型1, 字段2 类型2,…);<br>– 注意： a. 表名一般需要加前缀’t’或者’tb’    b.字段用来确定表中要存储哪些数据，字段名随便命名但是不能是关键字  c.数据类型必须是MySQL支持的数据类型<br>– 常用数据类型: int-整数, char(size)-定长字符串, varchar(size)-不定长字符串, text-字符串, bit-布尔, date-日期<br>CREATE TABLE if not EXISTS t_student(stuid int, stuname varchar(20), gender bit, birth date);  </p>
+<p>– 新建表并且添加约束: create table if not exists 表名(字段名1 类型1 约束1, 字段2 类型2 约束2,…);<br>– 常见约束: not null - 不为空,  default  - 设置默认值,  unique - 值唯一,  primary key - 主键约束<br>– 主键约束:  主键的值可以确定列表中唯一一条记录(通过一个主键值可以找到表中的唯一一条记录)<br>– 注意: auto_increment只针对主键有效,并且主键的类型是整型;<br>CREATE TABLE if not EXISTS t_student<br>(<br>stuid int not null auto_increment,<br>stuname varchar(20) not null,<br>gender bit DEFAULT 1,<br>birth date,<br>PRIMARY KEY(stuid)  – 将字段stuid作为当前表的主键（设置主键可以间接约束这个字段的值是唯一的）<br>);</p>
+<p>– 4.删除表: DROP TABLE if EXISTS 表名;<br>DROP TABLE if EXISTS t_student;<br>– 清空表中的数据: TRUNCATE TABLE 表名;<br>TRUNCATE TABLE t_student;</p>
+<p>– 5.修改表<br>– 5.1 添加列: alter TABLE 表名 add COLUMN 字段名 字段类型 约束;<br>alter TABLE t_student add COLUMN score FLOAT(8,2) DEFAULT 0;</p>
+<p>– 5.2 删除列: alter TABLE 表名 drop COLUMN 字段名;<br>alter TABLE t_student drop COLUMN gender;</p>
+<p>– 二、DML(数据操作语言) - 主要针对数据库中数据的增、删、改、查<br>– 1.增(添加数据/记录)<br>– 1.1插入数据/记录: insert into 表名 values(值1, 值2, 值3,….)  - 依次给指定表中的字段赋值<br>INSERT into t_student VALUES(100, ‘张三’, 0, ‘2019-9-23’);</p>
+<p>– 1.2插入数据/记录: insert into 表名(字段名1,字段名2,…) values(值1, 值2,…) -以指定的顺序给指定的字段赋值<br>INSERT into t_student(stuname, birth) VALUES(“小花”, date(now()));   – 一次插入一条记录</p>
+<p>– 一次插入多条记录<br>INSERT into t_student(stuname, birth) VALUES<br>(“小花”, date(now())),<br>(‘小明’, ‘2018-9-8’),<br>(‘路飞’, ‘1999-12-16’),<br>(‘佐助’, ‘2000-10-12’);</p>
+<p>– 值的问题: sql中是数字对应的值直接写，字符串需要使用引号引起来，bit类型的值只有0或者1, 时间可以用内容是满足时间格式字符串也可以是通过时间函数获取的值<br>– 时间函数: now() - 当前时间  date(now()) - 当前日期   year(now()) - 当前年   month(now()) - 当前月 ….  </p>
+<p>– 2.删（删除数据/记录）<br>– delete from 表名;    - 删除指定表中所有记录<br>DELETE FROM t_student;</p>
+<p>– delete from 表名 where 条件语句;    - 删除满足条件的记录<br>– SQL中的条件语句: =(判断是否相等), &lt;&gt;(不等于,和python中的!=功能一样), &gt;, &lt;, &gt;=, &lt;=<br>DELETE FROM t_student WHERE stuid=100;     – 删除t_student表中stuid的值等于100的记录<br>DELETE FROM t_student WHERE stuname=’小花’;  – 删除t_student表中stuname的值等于’小花’的记录<br>DELETE FROM t_student WHERE stuid&lt;108;   – 删除t_student表中stuid的值小于’小花’的记录  </p>
+<p>– 3.改(修改数据/记录)<br>– update 表名 set 字段1=新值1, 字段2=新值2,…;      - 将指定表中所有行的指定列/字段的值赋值为新值<br>UPDATE t_student set birth=’1999-10-1’, gender=1;</p>
+<p>– update 表名 set 字段1=新值1, 字段2=新值2,… where 条件语句;  -将表中满足条件的行中指定字段的值赋值为新值<br>UPDATE t_student set gender=0 WHERE stuname=’小花’;</p>
+<p>– 通配符%: 表示任意个数的任意字符（包括0个）<br>UPDATE t_student set birth=’2000-01-01’ WHERE stuname LIKE ‘小%’;    – 修改stuname是以’小’开头的行对应的birth的值<br>UPDATE t_student set birth=’2111-01-01’ WHERE stuname LIKE ‘%小%’;<br>– 统配符_: 表示一个任意字符<br>UPDATE t_student set birth=’2444-01-01’ WHERE stuname LIKE ‘小_’;    –  修改stuname只有两个字符，并且第一个字符是‘小’对应的行的birth的值<br>– 注意: 通配符只针对字符串有效!  </p>
+<p>– 4.查(获取数据)<br>– 4.1直接查询<br>– select <em> from 表名;    - 获取指定表中所有行和所有的列(所有数据)<br>SELECT </em> FROM t_student;</p>
+<p>– select 字段名1,字段名2,… from 表名;   - 获取指定表中所有行指定的列<br>SELECT stuname,stuid FROM t_student;   </p>
+<p>– select <em> from 表名 where 条件;    - 获取指定表中所有满足条件的行所有列的数据<br>SELECT </em> FROM t_student WHERE stuid&gt;115;    </p>
+<p>– 4.2列重命名<br>– select 字段1 as 新字段1, 字段2 as 新字段2,… from 表名;<br>– 注意： 这儿的as可以省略<br>SELECT stuid as ‘学号’, stuname, gender as ‘性别’ FROM t_student;    – 对查询结果中的stuid和gender字段进行重命名</p>
+<p>– 4.3对查询结果重新赋值(一般针对布尔数据)<br>– select if(字段名,值1,值2) from 表名;    -查询指定字段，并且判断字段对应的值是0还是1，如果是1结果为值1，否则为值2<br>– 注意: 这儿的if的用法是MySQL专有的<br>– MySQL写法: if(字段, 新值1, 新值2)<br>SELECT stuname,if(gender,’男’,’女’) as ‘性别’ FROM t_student;<br>– 通用写法:  case 字段 when 值 then 新值1 else 新值2 end<br>SELECT case gender WHEN 1 THEN ‘男’ ELSE ‘女’ END as ‘性别’ FROM t_student;</p>
+<p>– 4.4对列进行合并<br>– select concat(字段1,字段2,…) from 表名;<br>SELECT CONCAT(stuname,stuid) as ‘name_id’ FROM t_student;<br>SELECT CONCAT(stuname,’:’,stuid) as ‘name_id’ FROM t_student;<br>– 注意: 数字和字符串数据可以合并，bit类型的数据不可以合并<br>– SELECT CONCAT(stuname,’:’,gender) as ‘name_id’ FROM t_student;   </p>
+<p>– 4.5模糊查询 - 查询的时候时候通过like条件来指定查询对象<br>– sql中支持逻辑运算符and(逻辑与运算)和or(逻辑或运算)，not(逻辑非)<br>SELECT * FROM t_student WHERE stuname like ‘%飞%’ or not stuid &lt; 110;  </p>
+<p>– 4.6排序(先按之前的任何语法进行查询在排序)<br>– select <em> from 表名 order by 字段;      - 对查询结果按照指定字段的值进行升序排序<br>– select </em> from 表名 order by 字段 asc;      - 对查询结果按照指定字段的值进行升序排序<br>– select <em> from 表名 order by 字段 desc;      - 对查询结果按照指定字段的值进行降序排序<br>SELECT </em> FROM t_student ORDER BY gender;    – 按性别升序排序<br>SELECT <em> FROM t_student ORDER BY stuid ASC;  – 按学号升序排序<br>SELECT </em> FROM t_student ORDER BY stuid DESC;  – 按学号降序排序</p>
+<p>– 排序的时候可以通过在order by的后边加多个字段，进行联排。排序的时候前面的字段的优先级高些<br>SELECT * FROM t_student ORDER BY gender ASC, stuid DESC;   – 先按性别进行升序排序，然后再按学号降序排序。  </p>
+<p>– 4.7限制<br>– select <em> from 表名 limit N;    – 获取查询结果的前N条记录<br>SELECT </em> FROM t_student LIMIT 3;   – 获取查询结果的前3条记录</p>
+<p>– select <em> from 表名 limit M offset N;   – 对查询结果跳过前N条数据，取M条数据出来<br>SELECT </em> FROM t_student LIMIT 3 offset 4;  – 跳过前4数据，然后取3条数据</p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>您的支持是对我最大的肯定！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://mobile.qzone.qq.com/l?g=1526&amp;g_f=2000000103&amp;albumid=V11GaZ2n3JWMzd&amp;res_uin=1559813974&amp;subtype=3&amp;a=4&amp;sharetag=B1616A10BB7B52581BD48454E7885001">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/02/25/MySQL/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/Nginx服务器安装/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.435Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/MySQL配置/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2018/09/30/git常用指令/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          git常用指令
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/hello-world/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.433Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/22/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -316,8 +363,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
