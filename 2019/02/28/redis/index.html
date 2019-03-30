@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | DRH</title>
+  <title>DRH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="1.安装redis123456789 [root@iZwz97tbgo9lkabnat2lo8Z ~]# wget http://download.redis.io/releases/redis-3.2.12.tar.gz[root@iZwz97tbgo9lkabnat2lo8Z ~]# gunzip redis-3.2.12.tar.gz[root@iZwz97tbgo9lkabnat2lo8Z">
+<meta property="og:type" content="article">
 <meta property="og:title" content="DRH">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/02/28/redis/index.html">
 <meta property="og:site_name" content="DRH">
+<meta property="og:description" content="1.安装redis123456789 [root@iZwz97tbgo9lkabnat2lo8Z ~]# wget http://download.redis.io/releases/redis-3.2.12.tar.gz[root@iZwz97tbgo9lkabnat2lo8Z ~]# gunzip redis-3.2.12.tar.gz[root@iZwz97tbgo9lkabnat2lo8Z">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-28T09:32:04.264Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DRH">
+<meta name="twitter:description" content="1.安装redis123456789 [root@iZwz97tbgo9lkabnat2lo8Z ~]# wget http://download.redis.io/releases/redis-3.2.12.tar.gz[root@iZwz97tbgo9lkabnat2lo8Z ~]# gunzip redis-3.2.12.tar.gz[root@iZwz97tbgo9lkabnat2lo8Z">
   
     <link rel="alternative" href="/atom.xml" title="DRH" type="application/atom+xml">
   
@@ -146,171 +150,154 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-redis" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-安装redis"><a href="#1-安装redis" class="headerlink" title="1.安装redis"></a>1.安装redis</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> [root@iZwz97tbgo9lkabnat2lo8Z ~]# wget http://download.redis.io/releases/redis-3.2.12.tar.gz</span><br><span class="line">[root@iZwz97tbgo9lkabnat2lo8Z ~]# gunzip redis-3.2.12.tar.gz</span><br><span class="line">[root@iZwz97tbgo9lkabnat2lo8Z ~]# tar -xvf redis-3.2.12.tar</span><br><span class="line">[root@iZwz97tbgo9lkabnat2lo8Z ~]# cd redis-3.2.12</span><br><span class="line">[root@iZwz97tbgo9lkabnat2lo8Z ~]# make &amp;&amp; make install</span><br><span class="line">[root@iZwz97tbgo9lkabnat2lo8Z ~]# redis-server --version</span><br><span class="line">Redis server v=3.2.12 sha=00000000:0 malloc=jemalloc-4.0.3 bits=64 build=5bc5cd3c03d6ceb6</span><br><span class="line">[root@iZwz97tbgo9lkabnat2lo8Z ~]# redis-cli --version</span><br><span class="line">redis-cli 3.2.12</span><br></pre></td></tr></table></figure>
+<h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><h2 id="3-启动redis"><a href="#3-启动redis" class="headerlink" title="3.启动redis"></a>3.启动redis</h2><p>####1.启动redis服务器<br>redis-server redis.conf     – 启动redis服务<br>redis-server redis.conf &amp;   – 启动redis服务并且在后台运行<br>redis-server redis.conf &gt;&gt; redis.log &amp;   – 启动redis服务并且在后台运行,并且输出重定向   </p>
+<p>####2.启动redis客户端<br>redis-cli -h ip地址  </p>
+<h2 id="4-redis指令"><a href="#4-redis指令" class="headerlink" title="4.redis指令"></a>4.redis指令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">----字符串常用操作  </span><br><span class="line">set key value    -- 添加键值对、如果key存在就修改key对应的值  </span><br><span class="line">setnx key value  -- 如果key不存在就添加键值对</span><br><span class="line">setex key 时间 value  -- 添加键值对并且设置存活时间    </span><br><span class="line">set key value ex 时间   -- 添加键值对并且设置超时时间    </span><br><span class="line">mset key1 value1 key2 value2 ...   -- 同时添加多个键值对</span><br><span class="line">mget key1 key2 ...		--同时获取多个key的值 </span><br><span class="line">get key 			 -- 查看key对应的值    </span><br><span class="line">keys *				 -- 查看所有的key  </span><br><span class="line">del key1 key2		 -- 删除键值对    </span><br><span class="line">exists key		 -- 检测键值对是否存在  </span><br><span class="line">flushall 			 -- 删除所有数据库的所有键值对  </span><br><span class="line">flushdb 			 -- 删除当前数据库中所有键值对   </span><br><span class="line">select 标号       -- redis默认启动16个数据库对应的标号是0-15     </span><br><span class="line">ttl key 			 -- 查看剩余时间  </span><br><span class="line">expire key 时间   -- 设置键值对存活时间  </span><br><span class="line">incr key         -- 数值增加1 </span><br><span class="line">decr key			 -- 数值减少  </span><br><span class="line">append key 值     --key对应的字符串类型的值后追加指定的值  </span><br><span class="line"></span><br><span class="line">quit        -- 退出</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://pocxah9v3.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190329193%E6%94%AF%E4%BB%98%E5%AE%9D.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://pocxah9v3.bkt.clouddn.com/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/28/redis/" class="archive-article-date">
-  	<time datetime="2019-02-28T10:44:24.539Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-28</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/02/28/redis/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/23/Hexo博客搭建/" class="archive-article-date">
-  	<time datetime="2019-02-23T02:41:49.681Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/02/23/Hexo博客搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo 博客搭建</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/23/Hexo博客搭建/">hexo 博客搭建</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">标签</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/vim编辑器之神/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.436Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/Nginx服务器安装/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.435Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/MySQL配置/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.434Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/hello-world/" class="archive-article-date">
-  	<time datetime="2019-02-22T10:42:15.433Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/22/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -333,8 +320,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
