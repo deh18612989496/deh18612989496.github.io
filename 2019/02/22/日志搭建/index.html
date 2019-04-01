@@ -6,27 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo 博客搭建 | DRH</title>
+  <title>日志的搭建（日志就是能把错误收集在一起的.log） | DRH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Hexo博客搭建    ###1. 搭建博客使用hexo搭建个人博客前需要先在自己的电脑上装好git和node.js     首先在自己的电脑上创建一个空的文件夹’Hexo’   在gitbash中终端中通过cd指令进入到刚才创建的文件夹中    输入指令 npm install -g hexo 安装Hexo   输入指令 hexo init 进行初始化   依次输入指令npm install">
-<meta name="keywords" content="标签">
+  <meta name="description" content="#day04/setting.py(在最下面 的setting.py加入下面代码)12345678910111213141516171819202122232425262728293031323334# 日志配置LOG_PATH = os.path.join(BASE_DIR, &amp;apos;logs&amp;apos;)LOGGING = &amp;#123;    # 必须为1    &amp;apos;version">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 博客搭建">
-<meta property="og:url" content="http://yoursite.com/2019/02/23/Hexo博客搭建/index.html">
+<meta property="og:title" content="日志的搭建（日志就是能把错误收集在一起的.log）">
+<meta property="og:url" content="http://yoursite.com/2019/02/22/日志搭建/index.html">
 <meta property="og:site_name" content="DRH">
-<meta property="og:description" content="#Hexo博客搭建    ###1. 搭建博客使用hexo搭建个人博客前需要先在自己的电脑上装好git和node.js     首先在自己的电脑上创建一个空的文件夹’Hexo’   在gitbash中终端中通过cd指令进入到刚才创建的文件夹中    输入指令 npm install -g hexo 安装Hexo   输入指令 hexo init 进行初始化   依次输入指令npm install">
+<meta property="og:description" content="#day04/setting.py(在最下面 的setting.py加入下面代码)12345678910111213141516171819202122232425262728293031323334# 日志配置LOG_PATH = os.path.join(BASE_DIR, &amp;apos;logs&amp;apos;)LOGGING = &amp;#123;    # 必须为1    &amp;apos;version">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/Users/yuting/Desktop/Hexo/image1.png">
-<meta property="og:updated_time" content="2019-02-21T13:40:59.548Z">
+<meta property="og:updated_time" content="2019-03-30T10:10:43.993Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 博客搭建">
-<meta name="twitter:description" content="#Hexo博客搭建    ###1. 搭建博客使用hexo搭建个人博客前需要先在自己的电脑上装好git和node.js     首先在自己的电脑上创建一个空的文件夹’Hexo’   在gitbash中终端中通过cd指令进入到刚才创建的文件夹中    输入指令 npm install -g hexo 安装Hexo   输入指令 hexo init 进行初始化   依次输入指令npm install">
-<meta name="twitter:image" content="http://yoursite.com/Users/yuting/Desktop/Hexo/image1.png">
+<meta name="twitter:title" content="日志的搭建（日志就是能把错误收集在一起的.log）">
+<meta name="twitter:description" content="#day04/setting.py(在最下面 的setting.py加入下面代码)12345678910111213141516171819202122232425262728293031323334# 日志配置LOG_PATH = os.path.join(BASE_DIR, &amp;apos;logs&amp;apos;)LOGGING = &amp;#123;    # 必须为1    &amp;apos;version">
   
     <link rel="alternative" href="/atom.xml" title="DRH" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1551107338&di=7cc0f7baa191fde4527d53140b16f412&src=http://img.zcool.cn/community/01e305577b51ec0000012e7ec9f13b.png@1280w_1l_2o_100sh.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -50,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://pocxah9v3.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%90%8D%E7%89%87.jpg" class="js-avatar">
+			<img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1551107338&amp;di=7cc0f7baa191fde4527d53140b16f412&amp;src=http://img.zcool.cn/community/01e305577b51ec0000012e7ec9f13b.png@1280w_1l_2o_100sh.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">JACK</a></h1>
@@ -86,9 +83,11 @@
 				
 					<a class="github" target="_blank" href="https://github.com/deh18612989496" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/7eb5bb5f4bb0" title="jianshu"><i class="icon-jianshu"></i></a>
+					<a class="qq" target="_blank" href="http://pocxah9v3.bkt.clouddn.com/QQ%E5%90%8D%E7%89%87.jpg" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="mail" target="_blank" href="https://little_beardrh@qq.com" title="mail"><i class="icon-mail"></i></a>
+					<a class="weixin" target="_blank" href="http://pocxah9v3.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%90%8D%E7%89%87.jpg" title="weixin"><i class="icon-weixin"></i></a>
+		        
+					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/7eb5bb5f4bb0" title="jianshu"><i class="icon-jianshu"></i></a>
 		        
 			</div>
 		</nav>
@@ -106,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://pocxah9v3.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%90%8D%E7%89%87.jpg" class="js-avatar">
+				<img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1551107338&amp;di=7cc0f7baa191fde4527d53140b16f412&amp;src=http://img.zcool.cn/community/01e305577b51ec0000012e7ec9f13b.png@1280w_1l_2o_100sh.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">JACK</h1>
@@ -125,9 +124,11 @@
 					
 						<a class="github" target="_blank" href="https://github.com/deh18612989496" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/7eb5bb5f4bb0" title="jianshu"><i class="icon-jianshu"></i></a>
+						<a class="qq" target="_blank" href="http://pocxah9v3.bkt.clouddn.com/QQ%E5%90%8D%E7%89%87.jpg" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="mail" target="_blank" href="https://little_beardrh@qq.com" title="mail"><i class="icon-mail"></i></a>
+						<a class="weixin" target="_blank" href="http://pocxah9v3.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%90%8D%E7%89%87.jpg" title="weixin"><i class="icon-weixin"></i></a>
+			        
+						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/7eb5bb5f4bb0" title="jianshu"><i class="icon-jianshu"></i></a>
 			        
 				</div>
 			</nav>
@@ -153,44 +154,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Hexo博客搭建" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-日志搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo 博客搭建
+      日志的搭建（日志就是能把错误收集在一起的.log）
     </h1>
   
 
         
-        <a href="/2019/02/23/Hexo博客搭建/" class="archive-article-date">
-  	<time datetime="2019-02-23T02:41:49.681Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-23</time>
+        <a href="/2019/02/22/日志搭建/" class="archive-article-date">
+  	<time datetime="2019-02-22T10:42:15.433Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Hexo博客搭建   </p>
-<p>###1. 搭建博客<br>使用hexo搭建个人博客前需要先在自己的电脑上装好git和node.js   </p>
-<ol>
-<li>首先在自己的电脑上创建一个空的文件夹’Hexo’  </li>
-<li>在gitbash中终端中通过<code>cd</code>指令进入到刚才创建的文件夹中   </li>
-<li>输入指令 <code>npm install -g hexo</code> 安装Hexo  </li>
-<li>输入指令 <code>hexo init</code> 进行初始化  </li>
-<li>依次输入指令<code>npm install</code> <code>hexo server</code> 启动服务器<br> 博客内容发生改变后可以通过<code>hexo clean</code> <code>hexo generate</code> <code>hexo deploy</code> <code>hexo server</code>刷新后重新启动    </li>
-</ol>
-<p>###2. 部署博客  </p>
-<ol>
-<li>在github上创建一个空的仓库，仓库名： <code>用户名.github.io</code>  </li>
-<li><p>修改博客本地仓库中的配置文件（Hexo目录下的_config.yml文件）,在文件末尾添加一下选中内容<br><img src="/Users/yuting/Desktop/Hexo/image1.png" alt>  </p>
-</li>
-<li><p>使用git部署, 输入指令<code>npm install hexo-deployer-git --save</code>  </p>
-</li>
-<li>输入指令<code>hexo clean</code> <code>hexo generate</code> <code>hexo deploy</code> 对博客进行提交</li>
-</ol>
+        <p>#day04/setting.py(在最下面 的setting.py加入下面代码)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"># 日志配置</span><br><span class="line">LOG_PATH = os.path.join(BASE_DIR, &apos;logs&apos;)</span><br><span class="line"></span><br><span class="line">LOGGING = &#123;</span><br><span class="line">    # 必须为1</span><br><span class="line">    &apos;version&apos;: 1,</span><br><span class="line">    # 禁用日志</span><br><span class="line">    &apos;disable_existing_loggers&apos;: False,</span><br><span class="line">    &apos;loggers&apos;: &#123;</span><br><span class="line">        &apos;&apos;: &#123;</span><br><span class="line">            # 将系统接收到的日志，交给handler去处理</span><br><span class="line">            &apos;handlers&apos;: [&apos;console&apos;],</span><br><span class="line">            &apos;level&apos;: &apos;INFO&apos;,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &apos;handlers&apos;: &#123;</span><br><span class="line">        &apos;console&apos;: &#123;</span><br><span class="line">            # handler将日志信息存放在day07/logs/sys.log</span><br><span class="line">            &apos;filename&apos;: &apos;%s/%s&apos; % (LOG_PATH, &apos;sys.log&apos;),</span><br><span class="line">            &apos;level&apos;: &apos;INFO&apos;,</span><br><span class="line">            # 指定日志的格式</span><br><span class="line">            &apos;formatter&apos;: &apos;default&apos;,</span><br><span class="line">            # 备份</span><br><span class="line">            &apos;class&apos;: &apos;logging.handlers.RotatingFileHandler&apos;,</span><br><span class="line">            # 日志文件大小: 5M</span><br><span class="line">            &apos;maxBytes&apos;: 5 * 1024 * 1024,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &apos;formatters&apos;:&#123;</span><br><span class="line">        &apos;default&apos;: &#123;</span><br><span class="line">            &apos;format&apos;: &apos;%(asctime)s %(message)s&apos;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>#并在上面的文件MIDDLEWARE 里面加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;utils.LogMiddleware.LogMiddle&apos;,</span><br></pre></td></tr></table></figure></p>
+<p>#utils/LogMiddleware.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">import logging</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">from django.utils.deprecation import MiddlewareMixin</span><br><span class="line"></span><br><span class="line"># 获取日志logger</span><br><span class="line">logger = logging.getLogger(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class LogMiddle(MiddlewareMixin):</span><br><span class="line">    # 日志处理中间件</span><br><span class="line">    def process_request(self, request):</span><br><span class="line">        # 存放请求过来时的时间</span><br><span class="line">        request.init_time = time.time()</span><br><span class="line">        return None</span><br><span class="line"></span><br><span class="line">    def process_response(self, request, response):</span><br><span class="line">        try:</span><br><span class="line">            # 请求响应时，耗时时长</span><br><span class="line">            total_time = time.time() - request.init_time</span><br><span class="line">            # 请求路径</span><br><span class="line">            path = request.path</span><br><span class="line">            # 请求方式</span><br><span class="line">            method = request.method</span><br><span class="line">            # 响应状态码</span><br><span class="line">            status_code = response.status_code</span><br><span class="line">            # 响应内容</span><br><span class="line">            content = response.content</span><br><span class="line">            # 记录信息</span><br><span class="line">            message = &apos;%s %s %s %s %s&apos; % (total_time, path,</span><br><span class="line">                                          method, status_code,</span><br><span class="line">                                          content)</span><br><span class="line">            logger.info(message)</span><br><span class="line">        except:</span><br><span class="line">            logger.critical(&apos;系统错误&apos;)</span><br><span class="line">        return response</span><br></pre></td></tr></table></figure></p>
+<p>#日志级别等级CRITICAL &gt; ERROR &gt; WARNING &gt; INFO &gt; DEBUG &gt; NOTSET</p>
 
       
 
@@ -230,17 +217,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">标签</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -291,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/02/23/Hexo博客搭建/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/02/22/日志搭建/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -305,7 +281,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/02/28/redis/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/02/22/Nginx服务器安装/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -315,8 +291,8 @@
     </a>
   
   
-    <a href="/2019/02/22/vim编辑器之神/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2018/09/30/Linux指令系统/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -509,7 +485,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">2017年毕业于四川大学了人力资源专业如果您是HR以后还可以一起交流，我最早的一次赚钱的时候是我高三摆地摊。当时我是我们县上第一个摆地摊卖玩具的，生意还将就，之后就有很多人在模仿。当然那之后我只是尝试暑假之后就没有做了。我记得那年回去过年都还有一些在做。我在大学卖过保险和房子和其他销售。对销售有经验，做过主管，有一定管理经验。我在16年左右做过一款软件在淘宝销量排名第一，可是被人举报号被封了。所以我做软件可以说有3年经验但是中途也陆陆续续做过其他事比如和朋友开店等。&lt;br&gt;&lt;br&gt;熟悉前段web.html.css.js和后段python3编程，爬虫。mysql数据库. Django，tornado.,flask 环境编程，目前在某某外包公司上班，可以接受周6上班。公司负责人懂技术最好。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;br&gt;  &amp;emsp;&amp;emsp; 2017年毕业于四川大学了人力资源专业如果您是HR以后还可以一起交流【表情】，我最早的一次赚钱的时候是我高三摆地摊。当时我是我们县上第一个摆地摊卖玩具的，生意还将就，之后就有很多人在模仿。当然那只是我的一个尝试，之后就没有做了。我记得那年回去过年都还有一些在做。我在大学卖过保险和房子和其他销售。对销售有经验，做过主管，有一定管理经验。我在16年左右做过一款软件在淘宝销量排名第一，可是被人举报号被封了。所以我做软件可以说有3年经验但是中途也陆陆续续做过其他事比如和朋友开店等。&lt;br&gt;&lt;br&gt; &amp;emsp;&amp;emsp;本人熟悉前段web.（html.css.js）和后段python3编程，爬虫。MySQL数据库. Django，tornado.,flask，redis同步异步 环境编程，目前在某某外包公司上班，可以接受周6上班。公司负责人懂技术最好。&lt;br&gt; &amp;emsp;&amp;emsp;还等什么赶快联系我吧Tel:18612989496。</div>
   	  	
     	</section>
     
